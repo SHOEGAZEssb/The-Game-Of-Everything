@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Game Of Everything", "The Game Of Everything.csproj", "{3C0BEFE8-0438-4DE2-82D3-72DDFF641A6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Game Of Everything", "The Game Of Everything\The Game Of Everything.csproj", "{3C0BEFE8-0438-4DE2-82D3-72DDFF641A6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Game Of Everything (Console)", "..\The Game Of Everything (Console)\The Game Of Everything (Console).csproj", "{D158EAB4-017C-43B1-ACE0-681137E5A3BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Game Of Everything (Console)", "The Game Of Everything (Console)\The Game Of Everything (Console).csproj", "{D158EAB4-017C-43B1-ACE0-681137E5A3BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

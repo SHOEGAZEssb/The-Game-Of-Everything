@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Choice.cs" />
+    <Compile Include="ChoiceDialog.cs" />
     <Compile Include="Dialog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

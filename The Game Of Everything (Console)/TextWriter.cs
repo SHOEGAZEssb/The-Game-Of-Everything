@@ -14,12 +14,12 @@ namespace The_Game_Of_Everything
     /// <summary>
     /// The minimum time in ms to wait between character printing.
     /// </summary>
-    private const int MINTEXTWAITMS = 75;
+    private const int MINTEXTWAITMS = 50;
 
     /// <summary>
     /// The maximum time in ms to wait between character printing.
     /// </summary>
-    private const int MAXTEXTWAITMS = 115;
+    private const int MAXTEXTWAITMS = 100;
 
     /// <summary>
     /// The default time in ms to wait after a new line in a <see cref="Dialog"/>.
@@ -35,6 +35,8 @@ namespace The_Game_Of_Everything
     /// The maximum frequency to generate a beep with.
     /// </summary>
     private const int MAXBEEPHZ = 1200;
+
+    private const string SELECTOR = "-> ";
 
     #endregion Private Member
 
@@ -72,6 +74,34 @@ namespace The_Game_Of_Everything
         Console.WriteLine();
         Thread.Sleep(NEWLINEWAITMS);
       }
+    }
+
+    public static void WriteChoices(Choice[] choices, int selectedIndex, int consoleBufferIndex)
+    {
+      // clear old choices
+      ClearLineRange(consoleBufferIndex, consoleBufferIndex + choices.Length);
+
+      // write choices
+      for(int i = 0; i < choices.Length; i++)
+      {
+        if (i == selectedIndex)
+          Console.Write(SELECTOR);
+        else
+          Console.Write(new string(' ', SELECTOR.Length));
+
+        Console.WriteLine(choices[i].Text);
+      }
+    }
+
+    private static void ClearLineRange(int startLine, int endLine)
+    {
+      for(int i = startLine; i <= endLine; i++)
+      {
+        Console.SetCursorPosition(0, i);
+        Console.Write(new string(' ', Console.BufferWidth));
+      }
+
+      Console.SetCursorPosition(0, startLine);
     }
 
     #endregion Public Functions

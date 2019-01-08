@@ -10,12 +10,7 @@ namespace TGOE
   {
     #region Properties
 
-    public Choice[] Choices
-    {
-      get { return _choices; }
-      private set { _choices = value; }
-    }
-    private Choice[] _choices;
+    public Choice[] Choices { get; private set; }
 
     #endregion Properties
 

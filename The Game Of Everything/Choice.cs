@@ -10,22 +10,12 @@
     /// <summary>
     /// The text that this choice is displayed with.
     /// </summary>
-    public string Text
-    {
-      get { return _text; }
-      private set { _text = value; }
-    }
-    private string _text;
+    public string Text { get; private set; }
 
     /// <summary>
     /// The dialog following the selection of this choice.
     /// </summary>
-    public Dialog Following
-    {
-      get { return _following; }
-      private set { _following = value; }
-    }
-    private Dialog _following;
+    public Dialog Following { get; private set; }
 
     #endregion Properties
 

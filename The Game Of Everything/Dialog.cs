@@ -12,12 +12,7 @@
     /// <summary>
     /// The text of the dialog.
     /// </summary>
-    public string[] Lines
-    {
-      get { return _lines; }
-      private set { _lines = value; }
-    }
-    private string[] _lines;
+    public string[] Lines { get; private set; }
 
     #endregion Properties
 

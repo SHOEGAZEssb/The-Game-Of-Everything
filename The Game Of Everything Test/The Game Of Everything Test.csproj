@@ -60,7 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Program.vb" />
+    <ProjectReference Include="..\The Game Of Everything\The Game Of Everything.csproj">
+      <Project>{3c0befe8-0438-4de2-82d3-72ddff641a6c}</Project>
+      <Name>The Game Of Everything</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

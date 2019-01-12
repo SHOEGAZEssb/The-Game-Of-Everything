@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Game Of Everything", "The Game Of Everything\The Game Of Everything.csproj", "{3C0BEFE8-0438-4DE2-82D3-72DDFF641A6C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Game Of Everything (Console)", "The Game Of Everything (Console)\The Game Of Everything (Console).csproj", "{D158EAB4-017C-43B1-ACE0-681137E5A3BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Game Of Everything Test", "The Game Of Everything Test\The Game Of Everything Test.csproj", "{C59F910A-0913-4304-B98B-8525E42E4ECE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{0F22F1FC-0FFC-4144-85F5-B0D3D6232F84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +25,19 @@ Global
 		{D158EAB4-017C-43B1-ACE0-681137E5A3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D158EAB4-017C-43B1-ACE0-681137E5A3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D158EAB4-017C-43B1-ACE0-681137E5A3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59F910A-0913-4304-B98B-8525E42E4ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59F910A-0913-4304-B98B-8525E42E4ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59F910A-0913-4304-B98B-8525E42E4ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59F910A-0913-4304-B98B-8525E42E4ECE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C0BEFE8-0438-4DE2-82D3-72DDFF641A6C} = {0F22F1FC-0FFC-4144-85F5-B0D3D6232F84}
+		{C59F910A-0913-4304-B98B-8525E42E4ECE} = {0F22F1FC-0FFC-4144-85F5-B0D3D6232F84}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {341C84FF-BC17-4402-BC8D-D5FD0AE5AC27}
 	EndGlobalSection
 EndGlobal

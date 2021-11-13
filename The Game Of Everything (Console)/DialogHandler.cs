@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DialogSystem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,7 +55,14 @@ namespace The_Game_Of_Everything
       }
 
       Console.WriteLine();
-      TextWriter.WriteDialog(dlg.Choices[currentIndex].Following);
+      var following = dlg.Choices[currentIndex].Following;
+
+      if (following is ChoiceDialog cd)
+        HandleChoiceDialog(cd);
+      else if (following == null)
+        return;
+      else
+        HandleSimpleDialog(following);
 
 
     }

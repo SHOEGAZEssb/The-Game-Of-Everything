@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DialogSystem;
+using System;
 using System.Threading;
 using TGOE;
 
@@ -14,7 +15,7 @@ namespace The_Game_Of_Everything
     /// <summary>
     /// The minimum time in ms to wait between character printing.
     /// </summary>
-    private const int MINTEXTWAITMS = 50;
+    private const int MINTEXTWAITMS = 10;
 
     /// <summary>
     /// The maximum time in ms to wait between character printing.
@@ -29,12 +30,12 @@ namespace The_Game_Of_Everything
     /// <summary>
     /// The minimum frequency to generate a beep with.
     /// </summary>
-    private const int MINBEEPHZ = 800;
+    private const int MINBEEPHZ = 200;
 
     /// <summary>
     /// The maximum frequency to generate a beep with.
     /// </summary>
-    private const int MAXBEEPHZ = 1200;
+    private const int MAXBEEPHZ = 400;
 
     private const string SELECTOR = "-> ";
 

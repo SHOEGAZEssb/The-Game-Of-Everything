@@ -1,4 +1,4 @@
-﻿namespace TGOE
+﻿namespace DialogSystem
 {
   /// <summary>
   /// Represents a single choice in a <see cref="ChoiceDialog"/>.
